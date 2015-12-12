@@ -1,0 +1,91 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    line-height: 160%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    overflow-x: hidden; /*<---*/
+    overflow-y: scroll; /*<---*/
+}
+
+#top_container
+{
+    width: 850px;
+    height: 100%;
+    margin: 0 auto; /*inhoud wordt gecentreerd*/
+    min-height: 100%;
+}
+
+#top
+{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(255, 255, 255); /*zodat content inhoud er bij scrollen niet doorheen 'bloedt'*/
+}
+
+#bottom
+{
+    width: 400px;
+    height: 4em;
+    text-align: center;
+    bottom: 0px;
+    color: #999;
+    margin-left: 145px;
+    position: fixed; /* <-- */
+    z-index: 10;
+    background-color: #fff; /*zodat content inhoud er bij scrollen niet doorheen 'bloedt'*/
+}
+#bottom a
+{
+    color: #999;
+}
+#bottom p
+{
+    line-height: 4em; /* zet de tekst strak onderaan */
+}
+
+#contents
+{
+    left: 145px;
+    top: 100px;
+    width: 400px;
+    height: 100%;
+    color: #313a71;
+    line-height: 1.5em;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5em;
+    position: relative; /* <-- */
+}
+
+#contents p
+{
+    margin-top: 0px;
+}
+
+#nav
+{
+    top: 100px;
+    width: 125px;
+    bottom: 2em;
+    color: #313a71;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    position: fixed; /* <-- */
+    border: 1px dotted #999;
+}
